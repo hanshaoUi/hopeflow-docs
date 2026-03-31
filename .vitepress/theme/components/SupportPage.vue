@@ -1,4 +1,9 @@
 <script setup>
+import { withBase } from 'vitepress'
+
+const wxQrSrc = withBase('/wx.jpg')
+const zfbQrSrc = withBase('/zfb.jpg')
+
 const CONTACTS = [
   {
     icon: '🐞',
@@ -47,12 +52,20 @@ const CONTACTS = [
     <div class="section-label">赞赏支持</div>
     <div class="qr-grid">
       <div class="qr-card">
-        <div class="qr-placeholder">🧧</div>
+        <img
+          class="qr-image"
+          :src="wxQrSrc"
+          alt="微信赞赏码"
+        >
         <h3>微信支付</h3>
         <p>长按或扫码进行支持</p>
       </div>
       <div class="qr-card">
-        <div class="qr-placeholder">💸</div>
+        <img
+          class="qr-image"
+          :src="zfbQrSrc"
+          alt="支付宝赞赏码"
+        >
         <h3>支付宝</h3>
         <p>长按或扫码进行支持</p>
       </div>
