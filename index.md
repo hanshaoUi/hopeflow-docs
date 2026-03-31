@@ -4,14 +4,14 @@ layout: home
 hero:
   name: "HopeFlow Toolbox"
   text: "让 Illustrator 快 10 倍"
-  tagline: 85 个脚本工具，覆盖 12 个分类。专为设计师打造，开源免费，永久不收费。
+  tagline: "85 个脚本工具，覆盖 12 个分类。专为设计师打造，开源免费，持续维护。"
   image:
     src: ./favicon.svg
     alt: HopeFlow Toolbox
   actions:
     - theme: brand
       text: 免费下载 →
-      link: /guide/install-windows
+      link: https://github.com/hanshaoUi/hopeflow-toolbox/releases
     - theme: alt
       text: 查看全部功能
       link: /features
@@ -21,26 +21,21 @@ hero:
 
 features:
   - icon: ⚡
-    title: 真实提速
-    details: 基于真实设计工作流提炼，每个工具解决一个具体痛点，而非堆砌功能。平均节省 60% 的重复性操作时间。
-
-  - icon: 🧩
+    title: 真实提效
+    details: 基于真实设计工作流梳理，每个工具都针对一个明确痛点，而不是堆砌功能。
+  - icon: 🧰
     title: 85 个工具，12 个分类
-    details: 对齐、批量操作、色彩管理、文本处理、路径编辑、排料优化……覆盖完整 Illustrator 工作流。
-
+    details: 覆盖对齐、批量操作、色彩管理、文本处理、路径编辑、导出与排料等完整 Illustrator 工作流。
   - icon: 💻
     title: Win + Mac 双平台
-    details: 原生 CEP 技术，深度集成 Illustrator 面板，支持 CS6 至最新版 2025，Apple Silicon 原生支持。
-
-  - icon: 🔓
+    details: 基于 CEP 面板方案，支持 Windows 与 macOS，兼容 Illustrator CS6 及更新版本。
+  - icon: 🆓
     title: MIT 开源，永久免费
-    details: 完整源代码托管 GitHub，无付费墙，无订阅制。即使作者停止维护，代码仍永久可用。
-
-  - icon: 🔍
+    details: 源码公开托管，无订阅限制，无付费墙，项目可以长期被使用和维护。
+  - icon: 🔎
     title: 全文搜索
-    details: 文档内置本地全文搜索，无需联网，快速定位任意工具的使用说明和安装步骤。
-
-  - icon: 🛠
+    details: 文档内置本地搜索，可快速定位工具说明、安装方式和常见问题。
+  - icon: 🔄
     title: 持续维护
-    details: 每个 Bug 报告都会认真对待，跟随 Illustrator 版本迭代更新，已稳定维护 3 年以上。
+    details: 跟随 Illustrator 版本迭代持续更新，问题反馈和功能建议都会进入维护节奏。
 ---
