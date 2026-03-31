@@ -10,7 +10,7 @@
 
 ## 方法一：自动安装（推荐）
 
-1. 从 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-docs/releases) 下载最新版 `.zip` 压缩包
+1. 从 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-toolbox/releases) 下载最新版 `.zip` 压缩包
 2. 解压压缩包
 3. 打开终端，`cd` 到解压目录
 4. 执行安装脚本：

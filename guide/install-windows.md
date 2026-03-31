@@ -10,7 +10,7 @@
 
 ## 方法一：自动安装（推荐）
 
-1. 从 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-docs/releases) 下载最新版 `.zip` 压缩包
+1. 从 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-toolbox/releases) 下载最新版 `.zip` 压缩包
 2. 解压压缩包到任意位置
 3. 右键点击 `install.bat` → **以管理员身份运行**
 4. 看到"安装完成"提示后，**完全退出并重启 Illustrator**

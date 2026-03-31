@@ -65,4 +65,4 @@ v3.0 是完整重写版本，与 v2.x 不兼容。升级前请先完整卸载旧
 
 ## v2.x 历史版本
 
-v2.x 及以前的版本历史可在 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-docs/releases) 查看。
+v2.x 及以前的版本历史可在 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-toolbox/releases) 查看。

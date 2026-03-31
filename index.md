@@ -17,7 +17,7 @@ hero:
       link: /features
     - theme: alt
       text: GitHub
-      link: https://github.com/hanshaoUi/hopeflow-docs
+      link: https://github.com/hanshaoUi/hopeflow-toolbox
 
 features:
   - icon: ⚡

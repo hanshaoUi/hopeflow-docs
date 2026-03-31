@@ -4,12 +4,12 @@
 
 **方法一：GitHub Watch**
 
-在 [GitHub 仓库页面](https://github.com/hanshaoUi/hopeflow-docs) 点击 **Watch → Custom → Releases**，新版本发布时会收到邮件通知。
+在 [GitHub 仓库页面](https://github.com/hanshaoUi/hopeflow-toolbox) 点击 **Watch → Custom → Releases**，新版本发布时会收到邮件通知。
 
 **方法二：RSS 订阅**
 
 ```
-https://github.com/hanshaoUi/hopeflow-docs/releases.atom
+https://github.com/hanshaoUi/hopeflow-toolbox/releases.atom
 ```
 
 将此链接添加到你的 RSS 阅读器（如 Feedly、Reeder）即可。
@@ -53,4 +53,4 @@ v2.x 文件位置：
 
 ## 旧版本在哪里下载？
 
-所有历史版本均保留在 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-docs/releases) 页面，可按需下载任意历史版本。
+所有历史版本均保留在 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-toolbox/releases) 页面，可按需下载任意历史版本。

@@ -9,7 +9,7 @@
 3. ✅ 文档不是只读模式（检查标题栏是否有锁定图标）
 4. ✅ 没有处于文字编辑状态（按 <kbd>Esc</kbd> 退出文字编辑）
 
-如果以上都正常，请在 [GitHub Issues](https://github.com/hanshaoUi/hopeflow-docs/issues) 提交反馈，并附上：
+如果以上都正常，请在 [GitHub Issues](https://github.com/hanshaoUi/hopeflow-toolbox/issues) 提交反馈，并附上：
 - Adobe Illustrator 版本号
 - 操作系统版本
 - 操作的对象类型（路径、文字、图像等）

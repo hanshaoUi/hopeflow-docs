@@ -8,19 +8,19 @@
 
 ## 我想贡献新的脚本工具，怎么做？
 
-1. Fork [GitHub 仓库](https://github.com/hanshaoUi/hopeflow-docs)
+1. Fork [GitHub 仓库](https://github.com/hanshaoUi/hopeflow-toolbox)
 2. 在 `scripts/` 对应分类目录下添加 `.jsx` 脚本文件
 3. 在 `src/data/tools.js` 中注册工具元数据（`id`、`name`、`desc`、`category`）
 4. 本地测试确认功能正常
 5. 提交 Pull Request，描述功能和使用场景
 
 ::: tip 建议先开 Issue 讨论
-贡献前先开一个 [Issue](https://github.com/hanshaoUi/hopeflow-docs/issues) 说明你的想法，可以避免重复工作，也能提前确认这个功能是否符合项目方向。
+贡献前先开一个 [Issue](https://github.com/hanshaoUi/hopeflow-toolbox/issues) 说明你的想法，可以避免重复工作，也能提前确认这个功能是否符合项目方向。
 :::
 
 ## 发现 Bug 怎么反馈？
 
-在 [GitHub Issues](https://github.com/hanshaoUi/hopeflow-docs/issues) 新建一个 Issue，请尽量包含：
+在 [GitHub Issues](https://github.com/hanshaoUi/hopeflow-toolbox/issues) 新建一个 Issue，请尽量包含：
 
 - **Illustrator 版本**（如 Illustrator 2024 v28.x）
 - **操作系统**（如 Windows 11 22H2 / macOS 14.x）

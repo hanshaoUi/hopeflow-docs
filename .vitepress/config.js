@@ -99,7 +99,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/hanshaoUi/hopeflow-docs' },
+      { icon: 'github', link: 'https://github.com/hanshaoUi/hopeflow-toolbox' },
     ],
 
     footer: {

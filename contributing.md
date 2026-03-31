@@ -6,7 +6,7 @@
 
 ### 提交 Bug 报告
 
-在 [GitHub Issues](https://github.com/hanshaoUi/hopeflow-docs/issues) 提交，请包含：
+在 [GitHub Issues](https://github.com/hanshaoUi/hopeflow-toolbox/issues) 提交，请包含：
 
 - Illustrator 版本和操作系统
 - 复现步骤
@@ -35,7 +35,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/hanshaoUi/hopeflow-docs.git
+git clone https://github.com/hanshaoUi/hopeflow-toolbox.git
 
 # 安装依赖（主站）
 cd hopeflow-website-react
