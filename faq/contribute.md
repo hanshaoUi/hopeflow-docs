@@ -9,8 +9,8 @@
 ## 我想贡献新的脚本工具，怎么做？
 
 1. Fork [GitHub 仓库](https://github.com/hanshaoUi/hopeflow-toolbox)
-2. 在 `scripts/` 对应分类目录下添加 `.jsx` 脚本文件
-3. 在 `src/data/tools.js` 中注册工具元数据（`id`、`name`、`desc`、`category`）
+2. 在 `src/scripts/<分类>/` 下添加对应的 `.jsx` 脚本文件
+3. 在 `src/registry/scripts/<分类>.ts` 中注册工具元数据（`id`、`name`、`description`、`category`、参数等）
 4. 本地测试确认功能正常
 5. 提交 Pull Request，描述功能和使用场景
 

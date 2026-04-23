@@ -9,9 +9,10 @@ HopeFlow Toolbox 在开发过程中使用或参考了以下开源项目：
 | [Adobe CEP Resources](https://github.com/Adobe-CEP/CEP-Resources) | CEP 开发文档和示例 | Apache 2.0 |
 | [CSInterface](https://github.com/Adobe-CEP/CSInterface) | 宿主通信层 | Apache 2.0 |
 | [VitePress](https://vitepress.dev) | 文档站点框架 | MIT |
-| [React](https://react.dev) | 主站框架 | MIT |
-| [Vite](https://vitejs.dev) | 主站构建工具 | MIT |
-| [Framer Motion](https://www.framer.com/motion) | 主站动画 | MIT |
+| [React](https://react.dev) | 插件面板框架 | MIT |
+| [TypeScript](https://www.typescriptlang.org/) | 面板与注册表类型系统 | Apache 2.0 |
+| [Webpack](https://webpack.js.org/) | 插件构建与打包 | MIT |
+| [Fuse.js](https://www.fusejs.io/) | 本地搜索能力 | Apache 2.0 |
 
 ## 灵感来源
 

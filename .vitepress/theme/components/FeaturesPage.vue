@@ -3,14 +3,14 @@ import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 import { CATEGORIES } from '../../data/tools.js'
 
 const activeId = ref(CATEGORIES[0].id)
-const tabsRef  = ref(null)
-const showLeft  = ref(false)
+const tabsRef = ref(null)
+const showLeft = ref(false)
 const showRight = ref(false)
 
 function updateArrows() {
   const el = tabsRef.value
   if (!el) return
-  showLeft.value  = el.scrollLeft > 4
+  showLeft.value = el.scrollLeft > 4
   showRight.value = el.scrollLeft + el.clientWidth < el.scrollWidth - 4
 }
 
@@ -21,7 +21,7 @@ function scrollTabs(dir) {
 function scrollToSection(id) {
   const el = document.getElementById('cat-' + id)
   if (!el) return
-  const offset = 120 // nav + tabs bar height
+  const offset = 120
   const top = el.getBoundingClientRect().top + window.scrollY - offset
   window.scrollTo({ top, behavior: 'smooth' })
   activeId.value = id
@@ -35,14 +35,14 @@ onMounted(() => {
 
     observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) activeId.value = entry.target.dataset.id
         })
       },
       { rootMargin: '-80px 0px -65% 0px', threshold: 0 }
     )
 
-    CATEGORIES.forEach(cat => {
+    CATEGORIES.forEach((cat) => {
       const el = document.getElementById('cat-' + cat.id)
       if (el) observer.observe(el)
     })
@@ -52,23 +52,30 @@ onMounted(() => {
 onUnmounted(() => observer?.disconnect())
 
 const totalTools = CATEGORIES.reduce((sum, c) => sum + c.tools.length, 0)
+const activeCategories = CATEGORIES.filter((c) => !c.comingSoon).length
+const pendingCategories = CATEGORIES.length - activeCategories
 </script>
 
 <template>
   <div class="features-page">
-
-    <!-- Page header -->
     <div class="page-header">
       <h1>全部功能</h1>
-      <p>{{ CATEGORIES.length }} 个分类，{{ totalTools }} 个脚本工具，覆盖完整的 Illustrator 工作流</p>
+      <p>
+        {{ activeCategories }} 个已上线分类，{{ totalTools }} 个已接入工具
+        <span v-if="pendingCategories > 0">，另含 {{ pendingCategories }} 个施工中模块</span>
+      </p>
       <div class="stats-row">
         <div class="stat-item">
           <div class="stat-num">{{ totalTools }}+</div>
-          <div class="stat-label">脚本工具</div>
+          <div class="stat-label">已接入工具</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">{{ CATEGORIES.length }}</div>
-          <div class="stat-label">功能分类</div>
+          <div class="stat-num">{{ activeCategories }}</div>
+          <div class="stat-label">已上线分类</div>
+        </div>
+        <div v-if="pendingCategories > 0" class="stat-item">
+          <div class="stat-num">{{ pendingCategories }}</div>
+          <div class="stat-label">施工中模块</div>
         </div>
         <div class="stat-item">
           <div class="stat-num">Win+Mac</div>
@@ -81,7 +88,6 @@ const totalTools = CATEGORIES.reduce((sum, c) => sum + c.tools.length, 0)
       </div>
     </div>
 
-    <!-- Sticky tabs bar -->
     <div class="tabs-wrap">
       <div class="tabs-inner">
         <button
@@ -91,8 +97,8 @@ const totalTools = CATEGORIES.reduce((sum, c) => sum + c.tools.length, 0)
           @click="scrollTabs(-1)"
         >‹</button>
         <div
-          class="tabs-scroll"
           ref="tabsRef"
+          class="tabs-scroll"
           @scroll="updateArrows"
         >
           <button
@@ -115,15 +121,13 @@ const totalTools = CATEGORIES.reduce((sum, c) => sum + c.tools.length, 0)
       </div>
     </div>
 
-    <!-- Category sections -->
     <div
       v-for="cat in CATEGORIES"
-      :key="cat.id"
       :id="'cat-' + cat.id"
+      :key="cat.id"
       :data-id="cat.id"
       class="cat-section"
     >
-      <!-- Category header -->
       <div class="cat-header">
         <div class="cat-icon">{{ cat.icon }}</div>
         <div class="cat-header-text">
@@ -135,13 +139,11 @@ const totalTools = CATEGORIES.reduce((sum, c) => sum + c.tools.length, 0)
         </div>
       </div>
 
-      <!-- Coming soon placeholder -->
       <div v-if="cat.comingSoon" class="coming-soon-placeholder">
         <div class="cs-icon">🚧</div>
         <p>该功能模块正在开发中，敬请期待</p>
       </div>
 
-      <!-- Tool cards -->
       <div v-else class="tool-grid">
         <div
           v-for="tool in cat.tools"
@@ -154,6 +156,5 @@ const totalTools = CATEGORIES.reduce((sum, c) => sum + c.tools.length, 0)
         </div>
       </div>
     </div>
-
   </div>
 </template>

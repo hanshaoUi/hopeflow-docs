@@ -16,8 +16,8 @@
 ### 提交新工具
 
 1. Fork 仓库
-2. 在 `scripts/<分类>/` 下创建 `.jsx` 脚本文件
-3. 在 `src/data/tools.js` 注册工具元数据
+2. 在 `src/scripts/<分类>/` 下创建 `.jsx` 脚本文件
+3. 在 `src/registry/scripts/<分类>.ts` 注册工具元数据
 4. 提交 PR，说明工具功能和适用场景
 
 建议先开 Issue 讨论，确认方向后再开始开发。
@@ -37,21 +37,26 @@
 # 克隆仓库
 git clone https://github.com/hanshaoUi/hopeflow-toolbox.git
 
-# 安装依赖（主站）
-cd hopeflow-website-react
+# 安装插件依赖
+cd hopeflow-toolbox
 npm install
 npm run dev
 
-# 安装依赖（文档站）
-cd ../hopeflow-docs
+# 常用检查
+npm run build
+npm run lint
+npm run typecheck
+
+# 开发文档站
+cd hopeflow-docs
 npm install
 npm run docs:dev
 ```
 
 ## 脚本开发规范
 
-- 文件名使用 `camelCase`，如 `alignToKeyObject.jsx`
+- 文件名使用 kebab-case 或现有目录风格，保持与仓库同类脚本一致
 - 脚本顶部添加注释说明功能、参数和注意事项
 - 操作前检查选区，空选区时给出友好提示
-- 支持撤销（`app.activeDocument.undo` 或 `app.undo`）
+- 如涉及复杂功能，补充 `src/registry/scripts/*.ts` 参数配置，确保面板侧可以直接调用
 - 避免修改文档属性（单位、颜色模式等），除非这是工具的明确目的
