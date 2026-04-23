@@ -1,6 +1,6 @@
 # 更新日志
 
-## 主分支最新进展 <Badge type="tip" text="2026-04-23" />
+## v3.1.3 <Badge type="tip" text="最新 Release" />
 
 ### 新增
 
@@ -21,7 +21,7 @@
 
 ---
 
-## v3.1.2 <Badge type="tip" text="最新 Release" />
+## v3.1.2
 
 **发布日期：** 2026-03-31
 
