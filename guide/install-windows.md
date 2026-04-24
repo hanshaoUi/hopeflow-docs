@@ -4,78 +4,69 @@
 
 | 项目 | 要求 |
 |---|---|
-| 操作系统 | Windows 7 SP1 及以上（推荐 Windows 10/11） |
-| Illustrator | CS6 及以上所有版本 |
-| CEP 版本 | CEP 9+ |
+| 操作系统 | Windows 10 / 11 推荐 |
+| Illustrator | 支持 CEP 的 Illustrator 版本 |
+| 安装包 | HopeFlow Toolbox Windows Release zip |
 
-## 方法一：自动安装（推荐）
+## 推荐方式：图形安装器
 
-1. 从 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-toolbox/releases) 下载最新版 `.zip` 压缩包
-2. 解压压缩包到任意位置
-3. 右键点击 `install.bat` → **以管理员身份运行**
-4. 看到"安装完成"提示后，**完全退出并重启 Illustrator**
-5. 菜单栏 → 窗口 → 扩展 → **HopeFlow Toolbox**
+1. 从 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-toolbox/releases) 下载最新版 Windows zip。
+2. 解压 zip。
+3. 完全退出 Illustrator。
+4. 双击 `HopeFlow-Installer.bat`。
+5. 点击 `Install / Update`。
+6. 安装完成后重启 Illustrator。
+7. 在 Illustrator 中打开 `窗口 > 扩展 > HopeFlow Toolbox`。
 
-::: warning 必须以管理员身份运行
-否则无法写入注册表，插件将无法被 Illustrator 加载。
-:::
+安装器会自动：
 
-## 方法二：手动安装
+- 检查发布包是否完整。
+- 写入当前用户的 CEP 调试加载开关。
+- 安装或覆盖旧版本。
+- 将插件复制到当前用户 CEP 扩展目录。
 
-### 第一步：复制插件文件
+安装路径：
 
-将解压后的 `HopeFlow-Toolbox` 文件夹复制到：
-
-```
-C:\Program Files (x86)\Common Files\Adobe\CEP\extensions\
-```
-
-### 第二步：开启调试模式
-
-打开注册表编辑器（<kbd>Win</kbd> + <kbd>R</kbd> 输入 `regedit`），导航到：
-
-```
-HKEY_CURRENT_USER\SOFTWARE\Adobe\CSXS.11
+```text
+%APPDATA%\Adobe\CEP\extensions\com.hopeflow.toolbox
 ```
 
-新建字符串值：
-- 名称：`PlayerDebugMode`
-- 数据：`1`
+## 命令行方式
 
-::: tip CSXS 版本号说明
-CSXS.11 对应 Illustrator 2021 及以上版本。如果你使用的是更早版本，数字可能是 `.10` 或 `.9`。如不确定，可同时在 `.9`、`.10`、`.11` 三个路径下都创建该键值。
-:::
+如果图形安装器无法打开，可以运行：
 
-### 第三步：重启 Illustrator
+```bat
+install.bat
+```
 
-完全退出 Illustrator 后重新启动，在 **窗口 → 扩展** 中找到 HopeFlow Toolbox。
+检查发布包：
+
+```bat
+install.bat -Check
+```
+
+卸载：
+
+```bat
+install.bat -Uninstall
+```
 
 ## 验证安装
 
-1. 打开任意 Illustrator 文档
-2. 菜单栏 → 窗口 → 扩展 → HopeFlow Toolbox
-3. 面板顶部显示版本号 `v3.1.2` 即安装成功
-
-## 卸载
-
-删除以下路径中的 `HopeFlow-Toolbox` 文件夹：
-
-```
-C:\Program Files (x86)\Common Files\Adobe\CEP\extensions\
-```
-
-可选：在注册表中删除 `PlayerDebugMode` 键值（不影响其他 CEP 插件）。
+1. 重启 Illustrator。
+2. 打开 `窗口 > 扩展 > HopeFlow Toolbox`。
+3. 面板底部显示 `v3.1.4` 即安装成功。
 
 ## 常见问题
 
-**安装后找不到扩展菜单？**
+### 安装后找不到扩展菜单
 
-最常见原因是 `PlayerDebugMode` 未正确写入。请确认：
-1. 注册表路径是否正确（注意 CSXS 版本号）
-2. 是否完整退出并重启了 Illustrator
+请确认：
 
-**安装脚本提示"拒绝访问"？**
+- Illustrator 已完全退出并重新打开。
+- 安装器显示安装成功。
+- 安装目录中存在 `CSXS/manifest.xml` 和 `dist/index.html`。
 
-右键 `install.bat` → **以管理员身份运行**，不能双击直接运行。
+### 其他电脑安装失败
 
-更多问题请查看 [常见问题文档](/faq/)。
+从 v3.1.4 开始，Windows 发布包不要求用户电脑安装 Node.js，也不需要运行 `npm install` 或 `npm run build`。请确认使用的是 `HopeFlow-Toolbox-3.1.4-Windows.zip` 或更新版本。

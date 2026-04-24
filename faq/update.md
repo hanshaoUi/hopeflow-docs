@@ -2,56 +2,49 @@
 
 ## 如何知道有新版本发布？
 
-**方法一：GitHub Watch**
+可以通过以下方式关注新版本：
 
-在 [GitHub 仓库页面](https://github.com/hanshaoUi/hopeflow-toolbox) 点击 **Watch → Custom → Releases**，新版本发布时会收到邮件通知。
+1. 在 [GitHub 仓库](https://github.com/hanshaoUi/hopeflow-toolbox) Watch Releases。
+2. 订阅 GitHub Releases RSS：
 
-**方法二：RSS 订阅**
-
-```
+```text
 https://github.com/hanshaoUi/hopeflow-toolbox/releases.atom
 ```
 
-将此链接添加到你的 RSS 阅读器（如 Feedly、Reeder）即可。
-
-**方法三：在面板中查看**
-
-打开 HopeFlow Toolbox 面板，底部会显示当前版本号，可与 GitHub Releases 页面对比。
+3. 在插件设置面板底部查看当前版本号，与 Releases 页面比对。
 
 ## 如何更新到新版本？
 
-1. 先 [卸载当前版本](/guide/uninstall)
-2. 重新下载并安装新版本
-3. 重启 Illustrator
+### Windows
 
-::: warning 不要直接覆盖
-直接覆盖文件可能导致旧文件残留，建议先完整卸载再安装。
-:::
+1. 下载最新版 Windows 发布包。
+2. 解压。
+3. 关闭 Illustrator。
+4. 双击 `HopeFlow-Installer.bat`。
+5. 点击 `Install / Update`。
+6. 重启 Illustrator。
 
-## 从 v2.x 升级到 v3.x 需要注意什么？
+新版安装器会自动覆盖旧版安装目录，并备份旧文件。
 
-**必须先完整卸载 v2.x 再安装 v3.x。**
+### macOS
 
-v3.0 是完整重写版本：
-- 插件文件夹名称从 `HopeFlow` 更改为 `HopeFlow-Toolbox`
-- 直接覆盖安装会导致两个版本同时出现在扩展菜单
-- v2.x 的用户配置不兼容 v3.x，安装后需重新配置偏好设置
+1. 下载最新版发布包。
+2. 解压。
+3. 运行 `install.sh`。
+4. 重启 Illustrator。
 
-v2.x 文件位置：
-- Windows：`C:\Program Files\Common Files\Adobe\CEP\extensions\HopeFlow\`
-- macOS：`~/Library/Application Support/Adobe/CEP/extensions/HopeFlow/`
-
-## v3.x 各版本差异？
+## v3.x 各版本差异
 
 | 版本 | 主要变化 |
 |---|---|
-| v3.1.3 | 2026-04-23 发布的最新 Release，纳入拼接切割、随机色卡填充、对象标号编组及测量脚本增强 |
+| v3.1.4 | 新增画板尺寸表格导出、XLSX 图示、单价金额公式、Windows 图形安装器，并修复图示变形、PARM 和不可编辑图层问题 |
+| v3.1.3 | 新增拼接切割、随机色卡填充、对象标号编组及测量脚本增强 |
 | v3.1.2 | 修复长路径导出问题并优化排料性能 |
-| v3.1.0 | 新增素材库分类（施工中），改善面板加载速度 |
+| v3.1.0 | 新增素材库分类入口，改善面板加载速度 |
 | v3.0.0 | 完整重写，新增批量操作、色彩管理模块，面板 UI 全新设计 |
 
 查看完整更新历史：[更新日志](/changelog)
 
 ## 旧版本在哪里下载？
 
-所有历史版本均保留在 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-toolbox/releases) 页面，可按需下载任意历史版本。
+所有历史版本保留在 [GitHub Releases](https://github.com/hanshaoUi/hopeflow-toolbox/releases)。
