@@ -55,7 +55,7 @@ install.bat -Uninstall
 
 1. 重启 Illustrator。
 2. 打开 `窗口 > 扩展 > HopeFlow Toolbox`。
-3. 面板底部显示 `v3.1.4` 即安装成功。
+3. 面板底部显示 `v3.1.401` 即安装成功。
 
 ## 常见问题
 
@@ -69,4 +69,4 @@ install.bat -Uninstall
 
 ### 其他电脑安装失败
 
-从 v3.1.4 开始，Windows 发布包不要求用户电脑安装 Node.js，也不需要运行 `npm install` 或 `npm run build`。请确认使用的是 `HopeFlow-Toolbox-3.1.4-Windows.zip` 或更新版本。
+从 v3.1.4 开始，Windows 发布包不要求用户电脑安装 Node.js，也不需要运行 `npm install` 或 `npm run build`。请确认使用的是 `HopeFlow-Toolbox-3.1.401-Windows.zip` 或更新版本。
