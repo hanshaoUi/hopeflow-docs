@@ -31,9 +31,9 @@ HopeFlow Toolbox 是一款面向 **Adobe Illustrator** 生产场景的开源效�
 
 ## 当前版本
 
-当前最新 Release：**v3.1.402**
+当前最新 Release：**v3.1.403**
 
-v3.1.402 重点更新：
+v3.1.403 重点更新：
 
 - 新增导出画板尺寸表格，支持 XLSX、CSV、画板图示、单价和金额公式。
 - Windows 新增图形安装器，普通用户电脑不再需要安装 Node.js。
