@@ -26,6 +26,7 @@ export default defineConfig({
           { text: 'Windows 安装', link: '/guide/install-windows' },
           { text: 'macOS 安装', link: '/guide/install-macos' },
           { text: '快捷操作', link: '/guide/alignment' },
+          { text: '数据合并', link: '/guide/data-merge' },
           { text: '卸载插件', link: '/guide/uninstall' },
         ],
       },
@@ -52,7 +53,7 @@ export default defineConfig({
             { text: 'Windows 安装', link: '/guide/install-windows' },
             { text: 'macOS 安装', link: '/guide/install-macos' },
             { text: '快捷操作', link: '/guide/alignment' },
-
+            { text: '数据合并', link: '/guide/data-merge' },
             { text: '卸载插件', link: '/guide/uninstall' },
           ],
         },
