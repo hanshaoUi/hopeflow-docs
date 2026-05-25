@@ -13,6 +13,10 @@ https://github.com/hanshaoUi/hopeflow-toolbox/releases.atom
 
 3. 在插件设置面板底部查看当前版本号，与 Releases 页面比对。
 
+::: info 关于旧版本更新提示
+当前 HopeFlow Toolbox 没有内置联网检查更新或自动弹窗提示。已经安装旧版本的用户不会在插件内自动收到新版本提醒，建议通过 GitHub Watch Releases、RSS 或手动访问 Releases 页面确认最新版本。
+:::
+
 ## 如何更新到新版本？
 
 ### Windows
@@ -37,7 +41,8 @@ https://github.com/hanshaoUi/hopeflow-toolbox/releases.atom
 
 | 版本 | 主要变化 |
 |---|---|
-| v3.1.407 | 新增 SCD 图形浮雕工具，支持面板生成、选区模式、预览和 Native 加速 |
+| v3.1.409 | 智能排料优化接入 C++ helper，支持真实轮廓、多角度旋转、C++ 加速、自测和打包自动编译；图形浮雕完成改名 |
+| v3.1.407 | 新增图形浮雕工具，支持面板生成、选区模式、预览和 Native 加速 |
 | v3.1.406 | 新增批量画矩形专用面板和超级分割工具，增强 AI 色号产生器，并补全脚本中文说明 |
 | v3.1.405 | 增强脚本管理器，新增收藏、运行次数、自定义标签、脚本描述读取、右键菜单和设置页赞赏入口 |
 | v3.1.404 | 新增数据合并指南与示例视频，增强数据合并脚本和 AI Engine 服务 |

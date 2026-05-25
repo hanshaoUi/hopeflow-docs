@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "HopeFlow Toolbox"
   text: "让 Illustrator 快 10 倍"
-  tagline: "64 个已接入工具，覆盖 11 个核心分类，另含素材库入口。专为 Illustrator 生产场景打造。"
+  tagline: "持续扩展的 Illustrator 生产工具集，覆盖 11 个核心分类，另含素材库入口。专为 Illustrator 生产场景打造。"
   image:
     src: ./favicon.svg
     alt: HopeFlow Toolbox
@@ -24,8 +24,8 @@ features:
     title: 真实提效
     details: 基于真实设计工作流梳理，每个工具都针对一个明确痛点，而不是堆砌功能。
   - icon: 🧰
-    title: 64 个已接入工具
-    details: 当前面板已接入 64 个可直接调用的工具，覆盖对齐、画板、批量、色彩、文字、导出、测量、路径与排料等核心工作流。
+    title: 持续扩展的工具集
+    details: 当前面板持续接入可直接调用的工具，覆盖对齐、画板、批量、色彩、文字、导出、测量、路径、图像、效果与排料等核心工作流。
   - icon: 💻
     title: Win + Mac 双平台
     details: 基于 CEP 面板方案，支持 Windows 与 macOS，兼容 Illustrator CS6 及更新版本。
@@ -37,5 +37,5 @@ features:
     details: 插件前端已升级为 React + TypeScript 架构，脚本注册、搜索与参数面板都围绕可维护性重构。
   - icon: 🔄
     title: 持续维护
-    details: 2026 年 4 月主分支继续新增“拼接切割”“随机色卡填充”“对象标号编组”等功能，并同步修正测量与排料逻辑。
+    details: 2026 年 5 月主分支继续增强图形浮雕、智能排料、图像生成和工具注册校验，并同步更新发布包与文档。
 ---
