@@ -1,6 +1,22 @@
 # 更新日志
 
-## v3.1.409 <Badge type="tip" text="最新 Release" />
+## v3.1.410 <Badge type="tip" text="最新 Release" />
+
+**发布日期：** 2026-05-25
+
+### 新增
+
+- **自动检查更新**：插件启动后读取 GitHub Latest Release，并与当前 `APP_VERSION` 比对；发现新版本时会在主界面顶部显示更新提示。
+- 设置页「关于」新增版本状态卡片，支持手动检查更新、打开下载页和“本版本不再提醒”。
+
+### 更新说明
+
+- v3.1.410 之后安装过带检查器的版本，后续新版本发布时可以在插件内看到提示。
+- v3.1.409 及更早版本本身没有检查器，无法自动弹出升级到 v3.1.410 的插件内提示，仍需通过 GitHub Watch Releases、RSS 或手动访问 Releases 页面获知本次更新。
+
+---
+
+## v3.1.409
 
 **发布日期：** 2026-05-25
 
@@ -14,10 +30,6 @@
 - 智能排料 Native helper 缺失或执行失败时会自动回退到 JSX 排料路径。
 - Windows 发布包会自动构建并包含 `tools/nesting-native/build/Release/nesting_native.exe`。
 - 图形浮雕去掉旧的 SCD 前缀，统一显示为 **图形浮雕**。
-
-### 更新说明
-
-- 当前插件没有内置自动更新弹窗；旧版本用户需要通过 GitHub Watch Releases、RSS 或手动查看 Releases 页面获知更新。
 
 ---
 

@@ -14,7 +14,9 @@ https://github.com/hanshaoUi/hopeflow-toolbox/releases.atom
 3. 在插件设置面板底部查看当前版本号，与 Releases 页面比对。
 
 ::: info 关于旧版本更新提示
-当前 HopeFlow Toolbox 没有内置联网检查更新或自动弹窗提示。已经安装旧版本的用户不会在插件内自动收到新版本提醒，建议通过 GitHub Watch Releases、RSS 或手动访问 Releases 页面确认最新版本。
+v3.1.410 开始，HopeFlow Toolbox 会在插件启动后检查 GitHub Latest Release；如果发现比当前安装版本更新的正式版本，会在主界面顶部显示更新提示，也可以在设置页「关于」里手动检查。
+
+v3.1.409 及更早版本本身没有检查器，无法自动弹出升级到 v3.1.410 的插件内提示。这批用户仍需要通过 GitHub Watch Releases、RSS 或手动访问 Releases 页面获知本次更新；安装 v3.1.410 或更新版本后，后续版本发布才会收到插件内提示。
 :::
 
 ## 如何更新到新版本？
@@ -41,6 +43,7 @@ https://github.com/hanshaoUi/hopeflow-toolbox/releases.atom
 
 | 版本 | 主要变化 |
 |---|---|
+| v3.1.410 | 新增插件内检查更新：启动后读取 GitHub Latest Release，主界面提示新版本，设置页支持手动检查和打开下载页 |
 | v3.1.409 | 智能排料优化接入 C++ helper，支持真实轮廓、多角度旋转、C++ 加速、自测和打包自动编译；图形浮雕完成改名 |
 | v3.1.407 | 新增图形浮雕工具，支持面板生成、选区模式、预览和 Native 加速 |
 | v3.1.406 | 新增批量画矩形专用面板和超级分割工具，增强 AI 色号产生器，并补全脚本中文说明 |
